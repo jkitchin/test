@@ -24,7 +24,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        pip install --upgrade pip && pip install .
+        pip install --upgrade pip && pip install jupyter-book==0.12.3
+        pip install .
 
     # Build the book
     - name: Build the book
