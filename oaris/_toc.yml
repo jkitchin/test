@@ -1,0 +1,6 @@
+format: jb-book
+root: docs/index
+chapters:
+- file: docs/example_notebook
+- file: docs/api
+- file: docs/build-statistics

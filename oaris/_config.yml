@@ -1,0 +1,28 @@
+#######################################################################################
+# A default configuration that will be loaded for all jupyter books
+# See the documentation for help and more options: 
+# https://jupyterbook.org/customize/config.html
+
+#######################################################################################
+# Book settings
+title                       : OARIS  # The title of the book. Will be placed in the left navbar.
+author                      : John Kitchin  # The author of the book
+copyright                   : "2024"  # Copyright year to be placed in the footer
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: auto
+  allow_errors: true
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+ 
+sphinx:
+  extra_extensions:
+  - 'sphinx.ext.autodoc'
+  config:
+    nb_execution_show_tb: True  
