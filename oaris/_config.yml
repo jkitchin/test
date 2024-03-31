@@ -23,6 +23,10 @@ latex:
  
 sphinx:
   extra_extensions:
+  - 'numpydoc'
   - 'sphinx.ext.autodoc'
+  - 'sphinx.ext.autosummary'
   config:
     nb_execution_show_tb: True  
+    autosummary_generate: True
+    numpydoc_class_members_toctree: False
